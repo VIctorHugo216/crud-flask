@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1>Bem-vindo ao CRUD Flask</h1>
+    <p class="lead">Escolha uma das opções abaixo para começar:</p>
+
+    <div class="d-flex justify-content-center gap-3 mt-4">
+        <a href="{{ url_for('listar_usuarios') }}" class="btn btn-primary btn-lg">Usuários</a>
+        <a href="{{ url_for('listar_produtos') }}" class="btn btn-success btn-lg">Produtos</a>
+    </div>
+</div>
+{% endblock %}
